@@ -1,0 +1,4 @@
+python 3.6
+chatterbot 0.8.7
+os
+  
