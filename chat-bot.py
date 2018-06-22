@@ -12,7 +12,7 @@ import os
 
 
 chatbot = ChatBot("bot")    # create an instance of ChatBot and name it. We can add additional paramters here. Refer ChatterBot official doc for further details.
-
+chatbot.set_trainer(ListTrainer)
 """
 Get the data files for training. I used English conversation for training the bot.
 """
@@ -21,7 +21,6 @@ file_name = os.path.join(root_directory,"chatterbot-corpus-master/chatterbot_cor
 for file in os.listdir(file_name):
     data = open(file_name+"/"+file , "r").readlines()
     chatbot.train(data)   # train the bot using the data collected
-
 """
 Question and answer part. Here we get input from user and process it using teh chat bot instance. Send the response back to the terminal.
 """
