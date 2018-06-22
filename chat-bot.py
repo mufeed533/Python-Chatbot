@@ -14,7 +14,7 @@ import os
 chatbot = ChatBot("bot")    # create an instance of ChatBot and name it. We can add additional paramters here. Refer ChatterBot official doc for further details.
 
 """
-Get the data files for training. I used Englosh conversation for training the bot.
+Get the data files for training. I used English conversation for training the bot.
 """
 root_directory = os.path.dirname(__file__)
 file_name = os.path.join(root_directory,"chatterbot-corpus-master/chatterbot_corpus/data/english")
